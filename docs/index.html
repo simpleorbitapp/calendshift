@@ -1,41 +1,471 @@
-￼
-CalendShift
-Shift smarter. Live simpler.
-Privacy Policy
-Effective date: September 29, 2026
-1. Introduction
-This Privacy Policy explains how CalendShift, published by SimpleOrbit, processes information when you use the app. CalendShift is a local-first shift planning application. The current version does not require an account or send your schedule data to SimpleOrbit.
-2. Information CalendShift processes
-CalendShift processes information you choose to enter so it can provide its planning features. This may include:
-	•	shift dates, types, names, start and end times;
-	•	break and overtime durations;
-	•	workplace or client text and optional notes;
-	•	rotation patterns and calendar preferences;
-	•	reminder, appearance, and other app settings; and
-	•	local export-usage information needed by the app.
-This information is processed by the app on your device. SimpleOrbit does not receive it through the current version of CalendShift.
-3. Local data storage
-CalendShift stores schedule data and preferences in local storage on your device. The data remains available until you clear CalendShift's local storage, remove the app's data, or otherwise delete it through the controls available on your device. Changing devices may make the data unavailable unless you separately transfer an exported file.
-4. Shift and schedule information
-Shift details are used locally to display your calendar, calculate working time and summaries, and support schedule planning. CalendShift does not currently provide cloud synchronization, user accounts, or a SimpleOrbit-operated backend for this information.
-5. Notifications
-If you enable reminders, CalendShift asks for device notification permission. Reminders and test notifications are scheduled locally while the current implementation is active and able to run them. The current version does not use SMS, email reminders, or a remote push-notification server. You can disable reminders in CalendShift or change notification permission in your device settings.
-6. Exported files
-CalendShift can create CSV schedule downloads and print-ready schedule output that you may save as a PDF using the export or print tools available on your device. Exports are generated locally and may contain schedule details, workplace or client text, and notes depending on the options you select. After you export, save, or share a file, you are responsible for where it is stored and who can access it.
-7. Internet and external services
-The current CalendShift runtime does not use analytics, cloud storage, or third-party data-processing services. Internet access may be needed to load the app when it is served from a website and to open external pages or your email application when you choose those actions. Your device, hosting provider, or email provider may process technical information under its own privacy terms.
-8. Advertising
-The current version of CalendShift does not include an advertising SDK and does not send data to an advertising provider. A future version may introduce advertising. If that happens, this Privacy Policy will be updated before the related processing is introduced.
-9. Data sharing
-SimpleOrbit does not sell or share your CalendShift schedule data in the current version because that data is not transmitted to SimpleOrbit. Information may leave your device only through actions you initiate, such as exporting a file, sharing a file, opening an external page, or contacting support through your email provider.
-10. Data retention and deletion
-Locally stored CalendShift data remains on your device until you remove it. You can delete it by clearing CalendShift's site or app storage using the relevant app or device controls. Exported files must be deleted separately from each location where you saved or shared them.
-11. Children's privacy
-CalendShift is a general productivity application and is not directed to children. SimpleOrbit does not knowingly collect personal information from children through the current version of the app. If you believe a child has provided information directly to SimpleOrbit, please contact us using the confirmed contact address that will appear below.
-12. Security
-CalendShift limits privacy risk by keeping current app data local and not requiring an account. No method of device storage is completely secure, so you should protect access to your device, app environment, and exported files. SimpleOrbit cannot protect files after you export or share them.
-13. Changes to this Privacy Policy
-SimpleOrbit may update this Privacy Policy when CalendShift's features or data practices change. The revised policy will show a new effective date. Material changes will be reflected before the related processing is introduced where required.
-14. Contact
-For privacy questions or requests related to CalendShift, contact SimpleOrbit at simple.orbit.app@gmail.com.
-© 2026 SimpleOrbit. CalendShift: Shift smarter. Live simpler.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Privacy Policy for CalendShift — Shift smarter. Live simpler."
+  />
+
+  <title>CalendShift Privacy Policy</title>
+
+  <style>
+    :root {
+      --navy: #123b5d;
+      --teal: #1699a3;
+      --teal-soft: #e8f7f6;
+      --cream: #fbfaf6;
+      --white: #ffffff;
+      --text: #294c64;
+      --muted: #668399;
+      --border: #dce9e9;
+      --gold: #f6ad32;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 40px auto;
+    }
+
+    .hero {
+      background:
+        linear-gradient(
+          135deg,
+          #e8f8f7 0%,
+          #f4fbfa 55%,
+          #fff7e6 100%
+        );
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 36px;
+      margin-bottom: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .brand-icon {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: var(--teal);
+      color: white;
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+    .brand-name {
+      margin: 0;
+      color: var(--navy);
+      font-size: 26px;
+      line-height: 1.15;
+      font-weight: 750;
+    }
+
+    .tagline {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: clamp(32px, 6vw, 48px);
+      line-height: 1.12;
+    }
+
+    .effective-date {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    main {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 38px;
+    }
+
+    section + section {
+      margin-top: 34px;
+      padding-top: 30px;
+      border-top: 1px solid #edf2f2;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      color: var(--navy);
+      font-size: 21px;
+      line-height: 1.35;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 8px 0 14px;
+      padding-left: 24px;
+    }
+
+    li + li {
+      margin-top: 6px;
+    }
+
+    a {
+      color: var(--teal);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .local-note {
+      background: var(--teal-soft);
+      border-radius: 18px;
+      padding: 18px 20px;
+      margin-top: 18px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      padding: 28px 16px 10px;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        width: min(100% - 20px, 920px);
+        margin: 10px auto 24px;
+      }
+
+      .hero {
+        padding: 24px 20px;
+        border-radius: 22px;
+      }
+
+      main {
+        padding: 26px 20px;
+        border-radius: 22px;
+      }
+
+      .brand-icon {
+        width: 48px;
+        height: 48px;
+      }
+
+      .brand-name {
+        font-size: 22px;
+      }
+
+      h2 {
+        font-size: 19px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <header class="hero">
+      <div class="brand">
+        <div class="brand-icon">C</div>
+
+        <div>
+          <p class="brand-name">CalendShift</p>
+          <p class="tagline">Shift smarter. Live simpler.</p>
+        </div>
+      </div>
+
+      <h1>Privacy Policy</h1>
+      <p class="effective-date">
+        Effective date: September 29, 2026
+      </p>
+    </header>
+
+    <main>
+
+      <section>
+        <h2>1. Introduction</h2>
+
+        <p>
+          This Privacy Policy explains how CalendShift, published by
+          SimpleOrbit, processes information when you use the app.
+          CalendShift is a local-first shift planning application.
+          The current version does not require an account or send your
+          schedule data to SimpleOrbit.
+        </p>
+
+        <div class="local-note">
+          Your schedule and planning information is primarily processed
+          and stored locally on your device.
+        </div>
+      </section>
+
+      <section>
+        <h2>2. Information CalendShift Processes</h2>
+
+        <p>
+          CalendShift processes information you choose to enter so it can
+          provide its planning features. This may include:
+        </p>
+
+        <ul>
+          <li>Shift dates, types, names, start and end times</li>
+          <li>Break and overtime durations</li>
+          <li>Workplace or client text and optional notes</li>
+          <li>Rotation patterns and calendar preferences</li>
+          <li>Reminder, appearance, and other app settings</li>
+          <li>
+            Local export-usage information needed by the app
+          </li>
+        </ul>
+
+        <p>
+          This information is processed by the app on your device.
+          SimpleOrbit does not receive it through the current version
+          of CalendShift.
+        </p>
+      </section>
+
+      <section>
+        <h2>3. Local Data Storage</h2>
+
+        <p>
+          CalendShift stores schedule data and preferences in local
+          storage on your device. The data remains available until you
+          clear CalendShift's local storage, remove the app's data, or
+          otherwise delete it through controls available on your device.
+        </p>
+
+        <p>
+          Changing devices may make the data unavailable unless you
+          separately transfer an exported file.
+        </p>
+      </section>
+
+      <section>
+        <h2>4. Shift and Schedule Information</h2>
+
+        <p>
+          Shift details are used locally to display your calendar,
+          calculate working time and summaries, and support schedule
+          planning.
+        </p>
+
+        <p>
+          CalendShift does not currently provide cloud synchronization,
+          user accounts, or a SimpleOrbit-operated backend for this
+          information.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. Notifications</h2>
+
+        <p>
+          If you enable reminders, CalendShift asks for device
+          notification permission. Reminders and test notifications
+          are scheduled locally while the current implementation is
+          active and able to run them.
+        </p>
+
+        <p>
+          The current version does not use SMS, email reminders, or a
+          remote push-notification server. You can disable reminders
+          in CalendShift or change notification permission in your
+          device settings.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. Exported Files</h2>
+
+        <p>
+          CalendShift can create CSV schedule downloads and print-ready
+          schedule output that you may save as a PDF using the export
+          or print tools available on your device.
+        </p>
+
+        <p>
+          Exports are generated locally and may contain schedule details,
+          workplace or client text, and notes depending on the options
+          you select.
+        </p>
+
+        <p>
+          After you export, save, or share a file, you are responsible
+          for where it is stored and who can access it.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. Internet and External Services</h2>
+
+        <p>
+          The current CalendShift runtime does not use analytics, cloud
+          storage, or third-party data-processing services.
+        </p>
+
+        <p>
+          Internet access may be needed to load the app when it is served
+          from a website and to open external pages or your email
+          application when you choose those actions.
+        </p>
+
+        <p>
+          Your device, hosting provider, or email provider may process
+          technical information under its own privacy terms.
+        </p>
+      </section>
+
+      <section>
+        <h2>8. Advertising</h2>
+
+        <p>
+          The current version of CalendShift does not include an
+          advertising SDK and does not send data to an advertising
+          provider.
+        </p>
+
+        <p>
+          A future version may introduce advertising. If that happens,
+          this Privacy Policy will be updated before the related
+          processing is introduced.
+        </p>
+      </section>
+
+      <section>
+        <h2>9. Data Sharing</h2>
+
+        <p>
+          SimpleOrbit does not sell or share your CalendShift schedule
+          data in the current version because that data is not
+          transmitted to SimpleOrbit.
+        </p>
+
+        <p>
+          Information may leave your device only through actions you
+          initiate, such as exporting or sharing a file, opening an
+          external page, or contacting support through your email
+          provider.
+        </p>
+      </section>
+
+      <section>
+        <h2>10. Data Retention and Deletion</h2>
+
+        <p>
+          Locally stored CalendShift data remains on your device until
+          you remove it. You can delete local data using the relevant
+          app or device controls.
+        </p>
+
+        <p>
+          Exported files must be deleted separately from each location
+          where you saved or shared them.
+        </p>
+      </section>
+
+      <section>
+        <h2>11. Children's Privacy</h2>
+
+        <p>
+          CalendShift is a general productivity application and is not
+          directed to children.
+        </p>
+
+        <p>
+          SimpleOrbit does not knowingly collect personal information
+          from children through the current version of the app.
+          If you believe a child has provided information directly to
+          SimpleOrbit, please contact us using the address below.
+        </p>
+      </section>
+
+      <section>
+        <h2>12. Security</h2>
+
+        <p>
+          CalendShift limits privacy risk by keeping current app data
+          local and not requiring an account.
+        </p>
+
+        <p>
+          No method of device storage is completely secure. You should
+          protect access to your device, app environment, and exported
+          files.
+        </p>
+
+        <p>
+          SimpleOrbit cannot protect files after you export or share
+          them.
+        </p>
+      </section>
+
+      <section>
+        <h2>13. Changes to This Privacy Policy</h2>
+
+        <p>
+          SimpleOrbit may update this Privacy Policy when CalendShift's
+          features or data practices change. The revised policy will
+          show a new effective date.
+        </p>
+
+        <p>
+          Material changes will be reflected before the related
+          processing is introduced where required.
+        </p>
+      </section>
+
+      <section>
+        <h2>14. Contact</h2>
+
+        <p>
+          For privacy questions or requests related to CalendShift,
+          contact SimpleOrbit at
+          <a href="mailto:simple.orbit.app@gmail.com">
+            simple.orbit.app@gmail.com
+          </a>.
+        </p>
+      </section>
+
+    </main>
+
+    <footer>
+      © 2026 SimpleOrbit · CalendShift — Shift smarter. Live simpler.
+    </footer>
+
+  </div>
+</body>
+</html>
